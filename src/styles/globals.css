@@ -58,6 +58,16 @@
     --chart-5: 340 75% 55%;
   }
 }
+body {
+  --dot-bg: #161616;
+  --dot-color:#bcc0cc  ;
+  --dot-size: 1px;
+  --dot-space: 30px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+}
 
 @layer base {
   * {
